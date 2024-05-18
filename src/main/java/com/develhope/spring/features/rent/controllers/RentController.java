@@ -38,8 +38,8 @@ public class RentController {
     }
 
     @PutMapping("/update/{rentId}")
-    public ResponseEntity<?> updateById(@PathVariable Long rentId,@AuthenticationPrincipal UserEntity userEntity, @RequestBody RentalRequestDTO request){
-        RentalResponseDTO updatedRent = service.updateLinkRentById(rentId, userEntity, request);
+    public ResponseEntity<?> updateById(@AuthenticationPrincipal UserEntity userEntity, @PathVariable Long rentId, @RequestBody RentalRequestDTO request){
+        RentalResponseDTO updatedRent = service.updateLinkRentById(userEntity, rentId, request);
         if (updatedRent == null) {
             return ResponseEntity.status(422).body("No rentals found for the rentId: " + rentId);
         }
@@ -47,8 +47,8 @@ public class RentController {
     }
 
     @GetMapping("/getSingleRent/{rentId}")
-    public ResponseEntity<?> getSingleById(@PathVariable Long rentId){
-        RentalResponseDTO rental = service.getSingleRental(rentId);
+    public ResponseEntity<?> getSingleById(@AuthenticationPrincipal UserEntity userEntity,@PathVariable Long rentId){
+        RentalResponseDTO rental = service.getSingleRental(userEntity, rentId);
         if(rental == null){
             return  ResponseEntity.status(422).body("No rental found by the id: " + rentId);
         }
