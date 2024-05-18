@@ -2,10 +2,7 @@ package com.develhope.spring;
 
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 @MappedSuperclass
 @Getter
