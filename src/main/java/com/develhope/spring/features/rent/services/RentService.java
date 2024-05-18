@@ -162,3 +162,4 @@ public class RentService {
 // 3_add a method for most rented vehicle/most active profile of sellers
 // 4_where do I get libraries of vehicles with all data?
 // 5_add query in repo
+// 6_ask about the methods to Antonio
