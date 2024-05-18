@@ -1,7 +1,6 @@
-package com.develhope.spring.features.rent;
+package com.develhope.spring.features.rent.repositories.link;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,8 +1,10 @@
 package com.develhope.spring.features.rent;
 
-import com.develhope.spring.features.vehicle.entity.VehicleEntity;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;

@@ -1,5 +1,6 @@
-package com.develhope.spring.features.rent;
+package com.develhope.spring.features.rent.repositories.link;
 
+import com.develhope.spring.features.rent.RentEntity;
 import com.develhope.spring.features.user.entity.UserEntity;
 import com.develhope.spring.features.vehicle.entity.VehicleEntity;
 import jakarta.persistence.*;
